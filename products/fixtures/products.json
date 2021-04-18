@@ -1,0 +1,296 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Siciliana Fettuccine",
+      "description": "Homemade Fettucini pasta with Eggplant, tomatoes, basil and garlic",
+      "price": 12,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "https://static.onecms.io/wp-content/uploads/sites/37/2019/01/07153425/RU191189.jpg",
+      "image": "1.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Ravioli Butter and Sage",
+      "description": "Homemade Ravioli, stuffed with Spinach and Ricotta with butter and sage",
+      "price": 15,
+      "category": 1,
+      "rating": 4.7,
+      "image_url": "https://www.budgetbytes.com/wp-content/uploads/2018/10/Ravioli-with-Sage-Brown-Butter-Sauce-on-plate.jpg",
+      "image": "2.jpeg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Lasagna Vegeterian",
+      "description": "Fresh Vegetarian Lasagna, made Sicilian style",
+      "price": 11,
+      "category": 2,
+      "rating": 4.5,
+      "image_url": "https://myfoodstory.com/wp-content/uploads/2019/11/Easy-Vegetarian-Lasagna-5.jpg",
+      "image": "3.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "Chicken Yakisoba",
+      "description": "Yakisoba sauce is a sweet, savory, and tangy mix of soy sauce, ketchup, Worcestershire sauce, and other seasonings.",
+      "price": 9,
+      "category": 2,
+      "rating": 3.9,
+      "image_url": "https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Chicken_Yakisoba_Recipe_-_Japanese_Noodles-8.jpg",
+      "image": "4.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002111605",
+      "name": "Okonomiyaki with Prawns",
+      "description": "Japanese pancakes with a generous helping of fresh prawns",
+      "price": 14,
+      "category": 2,
+      "rating": 4.3,
+      "image_url": "https://img.delicious.com.au/vBDVyui0/w759-h506-cfill/del/2021/02/okonomiyaki-with-prawns-japanese-pancakes-146399-2.jpg",
+      "image": "5.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002260206",
+      "name": "Barbecued Salmon",
+      "description": "Fresh Salmon cooked in Wasabi and Soy sauce, a great autumn recipe",
+      "price": 13,
+      "category": 2,
+      "rating": 4.9,
+      "image_url": "https://img.delicious.com.au/7nUQBpPj/del/2020/03/barbecued-salmon-in-wasabi-and-soy-126961-1.jpg",
+      "image": "6.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002440521",
+      "name": "Crispy Masala Dosa",
+      "description": "Dosas are made from soaked and drained rice, fenugreek seeds, and urad daal, also known as black lentils",
+      "price": 10,
+      "category": 3,
+      "rating": 4.7,
+      "image_url": "https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg",
+      "image": "7.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002601115",
+      "name": "Dal Makhani",
+      "description": " Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils",
+      "price": 9,
+      "category": 3,
+      "rating": 4.4,
+      "image_url": "https://www.cookwithmanali.com/wp-content/uploads/2019/04/Restaurant-Style-Dal-Makhani-500x500.jpg",
+      "image": "8.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002690715",
+      "name": "Biryani with Goat",
+      "description": "Biryani is fragrant long-grained rice with meat or vegetables cooked in spices",
+      "price": 14,
+      "category": 3,
+      "rating": 4.8,
+      "image_url": "https://www.thespruceeats.com/thmb/ZunmTodJtTh5qOfWJfxiksmO0MI=/1885x1414/smart/filters:no_upscale()/GettyImages-639704020-5c4a63ecc9e77c00017bfebf.jpg",
+      "image": "9.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002701115",
+      "name": "Vegetable Basket",
+      "description": "Assortment of fresh vegitables that need to be rescued.",
+      "price": 7,
+      "category": 4,
+      "rating": 4.0,
+      "image_url": "https://sc04.alicdn.com/kf/U4a6ba78bce6140e6b50b6563c19f75e39.jpg",
+      "image": "10.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002761055",
+      "name": "Mixed Carrots",
+      "description": "Assortment of carrot types, grown and picked locally",
+      "price": 4,
+      "category": 4,
+      "rating": 4.3,
+      "image_url": "https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/carrots.jpg?h=c8b8df1c&itok=wy-UEFSx",
+      "image": "11.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820069",
+      "name": "Mixed Potatoes",
+      "description": "Assortment of potato types, grown and picked locallyd",
+      "price": 4,
+      "category": 4,
+      "rating": 4.4,
+      "image_url": "https://media.npr.org/assets/img/2015/09/03/42-25091478_custom-91859ceb84a5c3e1e149cd7ee4c4373ef19e36a1.jpg",
+      "image": "12.jpeg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820147",
+      "name": "Fruit Basket",
+      "description": "Basket of fresh and seasonal fruits",
+      "price": 12,
+      "category": 5,
+      "rating": 4.7,
+      "image_url": "https://www.fruit4london.co.uk/wp-content/uploads/2020/09/Luxury-Gift-Basket.jpg",
+      "image": "13.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002910572",
+      "name": "Mixed Berries",
+      "description": "Assortment of seasonal berries black berries, rasberries etc… ",
+      "price": 10,
+      "category": 5,
+      "rating": 4.5,
+      "image_url": "https://www.preciouscore.com/wp-content/uploads/2017/05/mixed-berries-picture.jpg",
+      "image": "14.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002990740",
+      "name": "Stone Fruits",
+      "description": "Assortment of stone fruits, peaches, mangos etc…",
+      "price": 11,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://www.gardeningknowhow.com/wp-content/uploads/2019/10/stone-fruit.jpg",
+      "image": "15.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003050248",
+      "name": "Mixed Herb Basket",
+      "description": "Mixed batch of seasonal herbs ",
+      "price": 9,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://richardsons.ie/wp-content/uploads/2017/09/herbs1.jpg",
+      "image": "16.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003070787",
+      "name": "Basil",
+      "description": "Fresh Basic great for food prep and freezing ",
+      "price": 7,
+      "category": 6,
+      "rating": 4.3,
+      "image_url": "https://www.wideopeneats.com/wp-content/uploads/2018/08/Preserve-Fresh-Basil.jpg",
+      "image": "17.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090182",
+      "name": "Roasting Herbs",
+      "description": "Consists of rosemary, thyme, and sage. Each of these herbs alone would be a great addition for your roast.",
+      "price": 11,
+      "category": 6,
+      "rating": 4.6,
+      "image_url": "https://layoga.com/wp-content/uploads/2017/02/cookherbsFINAL.jpg",
+      "image": "18.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090186",
+      "name": "Vegetarian Sushi Set",
+      "description": "Sushi Set for 2, including dragon, maki and tempura rolls",
+      "price": 5,
+      "category": 7,
+      "rating": 4.7,
+      "image_url": "https://data.thefeedfeed.com/recommended/post_3226670.jpg",
+      "image": "19.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003161326",
+      "name": "Margarita Pizza",
+      "description": "Home made pizza made fresh in the oven topped with mozzerella and fresh basil ",
+      "price": 4,
+      "category": 7,
+      "rating": 4.8,
+      "image_url": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg",
+      "image": "20.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003230723",
+      "name": "Barbecued Wings",
+      "description": "Spicy wings coupled with all the fixings",
+      "price": 6,
+      "category": 7,
+      "rating": 4.3,
+      "image_url": "https://www.cakenknife.com/wp-content/uploads/2019/10/Crispy-Korean-BBQ-Chicken-Wings_thumbnail-2-1-720x720.jpg",
+      "image": "21.jpg"
+    }
+  }
+]
