@@ -8,31 +8,31 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item"> Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item"> All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="meals-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Meals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Italian &amp; Essentials</a>
-                <a href="" class="dropdown-item">Japanese</a>
-                <a href="" class="dropdown-item">Indian</a>
-                <a href="" class="dropdown-item">All Meals</a>
+            <div class="dropdown-menu border-0" aria-labelledby="meals-link">
+                <a href="{% url 'products' %}?category=italian" class="dropdown-item">Italian </a>
+                <a href="{% url 'products' %}?category=japanese" class="dropdown-item">Japanese</a>
+                <a href="{% url 'products' %}?category=indian" class="dropdown-item">Indian</a>
+                <a href="{% url 'products' %}?category=all,meals, italian, japanese, indian" class="dropdown-item">All Meals</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fresh-produce-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Fresh Produce
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Vegetables </a>
-                <a href="" class="dropdown-item"> Fruits </a>
-                <a href="" class="dropdown-item"> Herbs </a>
-                <a href="" class="dropdown-item">All Fresh Produce</a>
+            <div class="dropdown-menu border-0" aria-labelledby="fresh-produce-link">
+                <a href="{% url 'products' %}?category=vegetables" class="dropdown-item">Vegetables </a>
+                <a href="{% url 'products' %}?category=fruits" class="dropdown-item"> Fruits </a>
+                <a href="{% url 'products' %}?category=herbs" class="dropdown-item"> Herbs </a>
+                <a href="{% url 'products' %}?category=herbs, fruits, vegetables" class="dropdown-item">All Fresh Produce</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <!-- <a href="" class="dropdown-item">New Arrivals</a> -->
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <!-- <a href="" class="dropdown-item">Clearance</a> -->
+                <!-- <a href="{% url 'products' %}?category=deals" class="dropdown-item">All Specials</a>-->
             </div>
         </li>
     </ul>
