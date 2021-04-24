@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">Contact Us</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p class="text-muted">Default Delivery Information</p>
+            <form id="contactForm">
+                <label for="fullname">Full Name *</label>
+                <input type="text" name="name" class="form-control margin-5" id="fullname" placeholder="Your Name..."
+                    required />
+                <label for="emailaddress">Email Address *</label>
+                <input type="email" name="emailaddress" class="form-control margin-5" id="emailaddress" minlength="10"
+                    pattern=".+.com" placeholder="Your Email address.." required />
+                <label for="projectsummary">Subject *</label>
+                <textarea rows="5" name="projectsummary" class="form-control margin-5" style="height:200px"
+                    id="projectsummary" placeholder="Write your query and click submit.." required></textarea>
+                <button form="contactForm" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/maps.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/email.js' %}"></script>
+    {% endblock %}
