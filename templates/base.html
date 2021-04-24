@@ -36,6 +36,8 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
+    <!-- Font Awesome icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -150,6 +152,9 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
 
 </body>
 
