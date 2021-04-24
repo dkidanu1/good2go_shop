@@ -33,9 +33,9 @@
                 <label for="emailaddress">Email Address *</label>
                 <input type="email" name="emailaddress" class="form-control margin-5" id="emailaddress" minlength="10"
                     pattern=".+.com" placeholder="Your Email address.." required />
-                <label for="projectsummary">Subject *</label>
-                <textarea rows="5" name="projectsummary" class="form-control margin-5" style="height:200px"
-                    id="projectsummary" placeholder="Write your question or comment then click submit.."
+                <label for="message">Subject *</label>
+                <textarea rows="5" name="message" class="form-control margin-5" style="height:200px"
+                    id="message" placeholder="Write your question or comment then click submit.."
                     required></textarea>
                 <button form="contactForm" type="submit" id="submit">Submit</button>
             </form>
@@ -58,7 +58,7 @@
             <h2 class="store-heading">Our Store Information</h2>
             <div>
             </div>
-            <p class="contact-text">333 Medborgaplatsen <br>Stockholm<br>Sweden <br> 0712261728</p>
+            <p class="contact-text"> 3rd Floor Ahlens <br>Stockholm<br>Sweden <br> 0712261728</p>
             <p class="times">Monday - Friday: 10am - 6pm <br> Saturday - Sunday: 10am - 7pm</p>
         </div>
     </div>
@@ -68,7 +68,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>console.log("LOADING ADDITIONAL SCRIPTS")</script>
 <script type="text/javascript" src="{% static '/js/maps.js' %}"></script>
 <script type="text/javascript" src="{% static '/js/email.js' %}"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+            </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("user_xrIf5Dia8Ng6JpCHdTsuT");
+        })();
+        </script>
 {% endblock %}

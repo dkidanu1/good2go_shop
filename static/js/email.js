@@ -4,10 +4,10 @@
 // --- Sends e-mail to set up service on email.js 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    emailjs.send("gmail", "contact", {
+    emailjs.send("gmail", "goodtogo", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "contact_request": contactForm.projectsummary.value
+        "contact_request": contactForm.message.value
     })
         .then(
             function success() {
