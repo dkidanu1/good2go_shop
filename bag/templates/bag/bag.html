@@ -41,7 +41,11 @@
                 {% for item in bag_items %}
                 <tr>
                     <td class="p-3 w-25">
-                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                        {% if item.product.image %}
+                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        {% else %}
+                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                        {% endif %}
                     </td>
                     <td class="py-3">
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -150,19 +154,19 @@
 
     // Remove item and reload on click
     $('.remove-item').click(function (e) {
-                var csrfToken = "{{ csrf_token }}";
-                var itemId = $(this).attr('id').split('remove_')[1];
-                var size = $(this).data('product_size');
-                var url = `/bag/remove/${itemId}/`;
-                var data = {
-                    'csrfmiddlewaretoken': csrfToken,
-                    'product_size': size
-                };
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
+        };
 
-                $.post(url, data)
-                    .done(function () {
-                        location.reload();
-                    });
-                })
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
 </script>
 {% endblock %}
