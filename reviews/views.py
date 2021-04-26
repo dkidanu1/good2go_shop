@@ -67,7 +67,7 @@ def add_comment(request, product_id):
 
     return redirect(reverse('product_detail', args=(product_id,)))
 
-def edit_review(request, review_id):
+def edit_comment(request, review_id):
     """
     Saves the review form that is edited by a user
     """
@@ -91,7 +91,7 @@ def edit_review(request, review_id):
 
     return redirect(reverse('product_detail', args=(review.product.id,)))  
 
-def delete_review(request, review_id):
+def delete_comment(request, review_id):
     """
     Deletes user's review
     """
@@ -117,5 +117,5 @@ def delete_review(request, review_id):
                                 f" error:{e} occured. Try again later.")
 
     return redirect(reverse('product_detail', args=(review.product.id,))) 
-    
+
 
