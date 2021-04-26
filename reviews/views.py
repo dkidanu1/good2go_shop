@@ -11,6 +11,7 @@ from profiles.models import UserProfile
 def reviews(request):
     return render(request, 'reviews/reviews.html') 
 
+
 def product_detail(request, slug):
     template_name = 'reviews/reviews.html'
     post = get_object_or_404(Product, slug=slug)
@@ -33,6 +34,8 @@ def product_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+                                       
+                                       
 def add_comment(request, product_id):
     """
     Allows a user to add a review and redirect them back to the
@@ -102,7 +105,7 @@ def delete_comment(request, review_id):
     try:
         review.delete()
 
-        reviews = Comment.objects.filter(product=product)
+        comments = Comment.objects.filter(product=product)
         avg_rating = Comment.aggregate(Avg('rating'))['rating__avg']
         if avg_rating:
             product.avg_rating = int(avg_rating)

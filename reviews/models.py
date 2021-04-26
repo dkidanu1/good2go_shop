@@ -1,4 +1,5 @@
 from django.db import models
+
 from products.models import Product
 from django.contrib.auth.models import User
 
@@ -13,7 +14,7 @@ class Comment(models.Model):
         (5, '5'),
     ]
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments', default='1')
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, default=True)
     title = models.CharField(max_length=50, default=True)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=100)
