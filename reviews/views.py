@@ -5,14 +5,14 @@ from django.db.models import Avg
 from products.models import Product
 from .models import Comment
 from .forms import CommentForm
-from profiles.models import User
+from profiles.models import UserProfile
 
 
 def reviews(request):
     return render(request, 'reviews/reviews.html') 
 
 def product_detail(request, slug):
-    template_name = 'reviews.html'
+    template_name = 'reviews/reviews.html'
     post = get_object_or_404(Product, slug=slug)
     comments = post.comments.filter(active=True)
     new_comment = None
@@ -38,7 +38,7 @@ def add_comment(request, product_id):
     Allows a user to add a review and redirect them back to the
     item view
     """
-    user = User.objects.get(user=request.user)
+    user = UserProfile.objects.get(user=request.user)
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
     review_details = {
@@ -65,7 +65,8 @@ def add_comment(request, product_id):
         messages.error(request, 'Something went wrong. '
                                 'Make sure the form is valid.')
 
-    return redirect(reverse('product_detail', args=(product_id,)))
+    return redirect(reverse('product_detail', args=(product_id)))
+
 
 def edit_comment(request, review_id):
     """
