@@ -13,7 +13,8 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view that will show  products, including the sorting and the search queries """
+    """ A view that will show  products, including the
+         sorting and the search queries """
 
     products = Product.objects.all()
     query = None
@@ -71,7 +72,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
     reviews = Comment.objects.filter(product=product)
-    
+ 
     context = {
         'product': product,
         'comment_form': review_form,
