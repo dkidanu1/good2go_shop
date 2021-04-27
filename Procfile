@@ -1,0 +1,1 @@
+web: gunicorn good2go_shop.wsgi:application
