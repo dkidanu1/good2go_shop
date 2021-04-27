@@ -1,3 +1,5 @@
+from reviews.models import Comment
+from reviews.forms import CommentForm
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -67,9 +69,13 @@ def product_detail(request, product_id):
     """ A view that will show individual product details to the user """
 
     product = get_object_or_404(Product, pk=product_id)
-
+    review_form = CommentForm()
+    reviews = Comment.objects.filter(product=product)
+    
     context = {
         'product': product,
+        'comment_form': review_form,
+        'comments': reviews
     }
 
     return render(request, 'products/product_detail.html', context)

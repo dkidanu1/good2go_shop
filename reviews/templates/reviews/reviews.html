@@ -1,5 +1,4 @@
-{% extends 'base.html' %}
-{% load static %}
+
 
 {% block page_header %}
 <div class="container">
@@ -10,7 +9,7 @@
             <hr>
         </div>
     </div>
-    {% endblock %}
+{% endblock %}
 
     {% block content %}
     <!-- Form for adding the  Review -->
@@ -55,10 +54,10 @@
             <!-- Title and rating -->
             <div class="col-12 col-lg-4 text-center px-0">
                 {{ comments.id }}
-                <p class="mb-0 fw-bold text-uppercase">{{ comments.title }}</p>
+                <p class="mb-0 fw-bold text-uppercase">{{ comment.title }}</p>
                 <p class="rating-stars txt-small" data-value="{{ comments.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
-                {% if user.is_authenticated and user.get_username == comment.user.user.username %}
+                {% if user.is_authenticated and user.get_username == comment.user.username %}
                 <div class="col m-auto text-center mb-2">
                     <!-- Edit button, will call modal with reviews details to be edited -->
                     <a href="" class="p-1 text-secondary button text-decoration-none" data-toggle="modal"
@@ -88,7 +87,7 @@
                                             required="" id="id_title">
                                         <textarea name="description" cols="40" rows="10" placeholder="Description"
                                             class="add-blog-form-field textarea form-control form-control" required=""
-                                            id="id_description">{{comments.body}}</textarea>
+                                            id="id_description">{{comment.body}}</textarea>
                                         <select name="rating"
                                             class="add-blog-form-field select form-control form-control" required=""
                                             id="id_rating">
@@ -146,11 +145,11 @@
             </div>
             <!-- Description of user and added date -->
             <div class="col-12 col-lg-8">
-                <p>"{{ comments.body }}"</p>
+                <p>"{{ comment.body }}"</p>
                 <div class="row">
                     <div class="col">
-                        <p class="text-end fst-italic text-secondary mb-0">-{{ comments.user }}</p>
-                        <p class="text-secondary text-end mb-0"><small>{{ comments.created_on|date:"M d, Y" }}</small>
+                        <p class="text-end fst-italic text-secondary mb-0">-{{ comment.user }}</p>
+                        <p class="text-secondary text-end mb-0"><small>{{ comment.created_on|date:"M d, Y" }}</small>
                         </p>
                     </div>
                 </div>
