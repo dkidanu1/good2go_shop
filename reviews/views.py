@@ -45,7 +45,7 @@ def add_comment(request, product_id):
     user = request.user
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
-    print(">>> title", request.POST['title'])
+   
     review_details = {
         'title': request.POST['title'],
         'body': request.POST['body'],

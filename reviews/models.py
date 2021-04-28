@@ -14,12 +14,12 @@ class Comment(models.Model):
         (5, '5'),
     ]
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments', default='1')
-    user = models.OneToOneField(User, on_delete=models.CASCADE, default=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=True)
     title = models.CharField(max_length=50, default=True)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=100)
     body = models.TextField(max_length=500)
-    rating = models.IntegerField(choices=RATE, default=True)
+    rating = models.IntegerField(choices=RATE, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
 

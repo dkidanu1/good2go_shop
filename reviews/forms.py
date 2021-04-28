@@ -3,9 +3,35 @@ from django import forms
 
 
 class CommentForm(forms.ModelForm):
+
+
+    title = forms.CharField(
+        widget=forms.TextInput(
+        attrs={"placeholder": "Title",
+        "class": "form-control"})
+    )
+    body = forms.CharField(
+        widget=forms.Textarea(
+        attrs={"placeholder": "Body",
+        "class": "form-control",
+        })
+    )
+    rating = forms.CharField(
+        widget=forms.TextInput(
+        attrs={"placeholder": "rating",
+        "class": "form-control"})
+    )
+
     class Meta:
         model = Comment
-        fields = ('name', 'email', 'body')
+        exclude = (
+            'user',
+            'date_added',
+            'product',
+            'upvotes',
+            'downvotes')
+
+        fields = ('title', 'body', 'rating')
 
         labels = {
             'rating': 'Rating',
@@ -38,4 +64,3 @@ class CommentForm(forms.ModelForm):
     #             placeholder = placeholders[field]
     #             self.fields[field].widget.attrs['placeholder'] = placeholder
     #             self.fields[field].label = False
-

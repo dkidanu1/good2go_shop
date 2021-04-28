@@ -72,7 +72,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
     reviews = Comment.objects.filter(product=product)
- 
+    print(reviews)
     context = {
         'product': product,
         'comment_form': review_form,
