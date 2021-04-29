@@ -10,6 +10,8 @@ body {
     font-family: 'Lato';
 }
 
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -28,14 +30,14 @@ body {
 }
 
 .shop-now-button {
-    background: #99b1c9;
-    color: black;
+    background: #846267;
+    color: #f0f9ff;
     min-width: 260px;
 }
 
 .btn-black {
-    background: #99c1d9;
-    color: #f1e3d3;
+    background: #846267;
+    color: #f0f9ff;
 }
 
 .btn-outline-black {
@@ -50,20 +52,20 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #99c1d9;
-    color: #f1e3d3;
+    background: #E0C1B3;
+    color: #f0f9ff;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #846267 !important;
 }
 
 .border-black {
-    border: 1px solid #99c1d9 !important;
+    border: 1px solid #846267 !important;
 }
 
 .bg-black {
-    background: #99c1d9 !important;
+    background: #846267 !important;
 }
 
 .overlay {
@@ -72,7 +74,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: #f1e3d3;
+	background: white;
 	z-index: -1;
 }
 
@@ -171,7 +173,7 @@ body { margin: 0; padding: 0; }
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
-  background-color:#282d32;
+  background-color:#846267;
 }
 
 .footer-dark h3 {

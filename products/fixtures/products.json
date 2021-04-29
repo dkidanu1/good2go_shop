@@ -259,7 +259,7 @@
       "name": "Vegetarian Sushi Set",
       "description": "Sushi Set for 2, including dragon, maki and tempura rolls",
       "price": 5,
-      "category": 7,
+      "category": 2,
       "rating": 4.7,
       "image_url": "https://data.thefeedfeed.com/recommended/post_3226670.jpg",
       "image": "19.png"
@@ -273,7 +273,7 @@
       "name": "Margarita Pizza",
       "description": "Home made pizza made fresh in the oven topped with mozzerella and fresh basil ",
       "price": 4,
-      "category": 7,
+      "category": 1,
       "rating": 4.8,
       "image_url": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-600x858.jpg",
       "image": "20.jpg"
@@ -287,7 +287,7 @@
       "name": "Barbecued Wings",
       "description": "Spicy wings coupled with all the fixings",
       "price": 6,
-      "category": 7,
+      "category": 2,
       "rating": 4.3,
       "image_url": "https://www.cakenknife.com/wp-content/uploads/2019/10/Crispy-Korean-BBQ-Chicken-Wings_thumbnail-2-1-720x720.jpg",
       "image": "21.jpg"

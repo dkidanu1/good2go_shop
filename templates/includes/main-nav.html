@@ -1,10 +1,8 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/home/templates/home/aboutus.html" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'aboutus' %}"   aria-haspopup="true" aria-expanded="false">
                 About Us
             </a>
-        </li>
         
         
         <li class="nav-item dropdown">
@@ -38,19 +36,11 @@
             <div class="dropdown-menu border-0" aria-labelledby="fresh-produce-link">
                 <a href="{% url 'products' %}?category=vegetables" class="dropdown-item">Vegetables </a>
                 <a href="{% url 'products' %}?category=fruits" class="dropdown-item"> Fruits </a>
-                <a href="{% url 'products' %}?category=herbs" class="dropdown-item"> Herbs </a>
-                <a href="{% url 'products' %}?category=herbs, fruits, vegetables" class="dropdown-item">All Fresh Produce</a>
+                <a href="{% url 'products' %}?category=Herbs" class="dropdown-item"> Herbs </a>
+                <a href="{% url 'products' %}?category=Herbs, fruits, vegetables" class="dropdown-item">All Fresh Produce</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-            </div>
-        </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
