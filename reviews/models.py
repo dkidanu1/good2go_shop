@@ -15,7 +15,7 @@ class Comment(models.Model):
     ]
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments', default='1')
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=True)
-    title = models.CharField(max_length=50, default=True)
+    title = models.CharField(max_length=50)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=100)
     body = models.TextField(max_length=500)

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Reviews</h2>
+            <h2 class="logo-font mb-4 text-center">Reviews</h2>
             <hr>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <div class="text-center mt-3">
         <button type="button" class="btn btn-outline-secondary rounded-0" data-toggle="modal"
             data-target="#commentModal">
-            Review
+            Add Review
         </button>
         <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -53,8 +53,8 @@
         <div class="col-12 col-md-5 row p-3 m-3 border">
             <!-- Title and rating -->
             <div class="col-12 col-lg-4 text-center px-0">
-                {{ comment.id }}
-                <p class="mb-0 fw-bold text-uppercase">{{ comment.title }}</p>
+                Rating: {{ comment.rating }} /5
+                <p class="mb-0 fw-bold text-uppercase">{{ created.on }}</p>
                 <p class="rating-stars txt-small" data-value="{{ comments.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
                 {% if user.is_authenticated and user.get_username == comment.user.username %}
