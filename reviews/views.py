@@ -96,7 +96,8 @@ def edit_comment(request, review_id):
                                 'Make sure the form is valid.')
 
     #return redirect(reverse('product_detail', args=(review.product.id,)))
-    return redirect('/products/{}'.format(product.id))  
+    return redirect('/products/{}'.format(product.id)) 
+
 
 def delete_comment(request, review_id):
     """
