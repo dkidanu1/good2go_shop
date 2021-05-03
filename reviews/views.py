@@ -9,7 +9,7 @@ from profiles.models import UserProfile
 
 
 def reviews(request):
-    return render(request, 'reviews/reviews.html') 
+    return render(request, 'reviews/reviews.html')
 
 
 def product_detail(request, slug):
