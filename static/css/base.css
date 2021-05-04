@@ -10,6 +10,26 @@ body {
     font-family: 'Lato';
 }
 
+/*------------------- Products */
+.card-img-top {
+    height: 250px;
+    width:250px;
+    overflow: hidden;
+    margin-left: 20px;
+
+}
+
+@media (min-width:500px) and (max-width:800px) {
+.card {
+    margin-left: 45px;
+}
+    }
+
+@media (max-width:500px) {
+.card-img-top {
+    margin-left: 45px;
+}
+  }
 
 /* from Bulma */
 .icon {
