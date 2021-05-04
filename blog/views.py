@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Post
 
@@ -8,7 +8,12 @@ class PostList(generic.ListView):
     template_name = 'index.html'
 
 
-class PostDetail(generic.DetailView):
+#class PostDetail(generic.DetailView):
+    #model = Post
+    #template_name = 'post_detail.html'
+
+
+class Post_Detail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
 
@@ -20,24 +25,35 @@ def display_posts():
     return queryset
 
 
-def post_detail(request, slug):
+#def post_detail(request, slug):
     """ Details on Blog Post """
-    post = Post.objects.get(slug=slug)
+    #post = Post.objects.get(slug=slug)
 
-    if request.method == 'POST':
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            obj = form.save(commit=False)
-            obj.post = post
-            obj.save()
-            return redirect('detail_post', slug=post.slug)
-    else:
-        form = CommentForm()
+    #if request.method == 'POST':
+        #form = CommentForm(request.POST)
+        #if form.is_valid():
+            #obj = form.save(commit=False)
+            #obj.post = post
+            #obj.save()
+            #return redirect('detail_post', slug=post.slug)
+    #else:
+        #form = CommentForm()
 
-    template = 'blog/post_detail.html'
+    #template = 'blog/post_detail.html'
+    #context = {
+        #'post': post,
+        #'form': form
+    #}
+
+    #return render(request, template, context)
+
+def post_detail(request, post_id):
+    """ Details on Blog Post """
+    post = get_object_or_404(Post, pk=post_id)
+    
     context = {
         'post': post,
-        'form': form,
+        'form': form
     }
 
-    return render(request, template, context)
+    return render(request, 'blog/post_detail.html', context)
