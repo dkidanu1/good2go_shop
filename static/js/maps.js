@@ -4,7 +4,8 @@ var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/mapbox/streets-v11', // style URL
 center: [18.06913, 59.33301], // starting position [lng, lat]
-zoom: 7 // starting zoom
+zoom: 7, // starting zoom
+width: '100px'
 });
 
 // Set options

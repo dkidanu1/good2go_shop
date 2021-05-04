@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from  blog.views import display_posts
+from blog.views import display_posts
 
 
 def index(request):
