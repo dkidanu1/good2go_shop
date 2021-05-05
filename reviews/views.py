@@ -104,22 +104,9 @@ def delete_comment(request, review_id):
     review = get_object_or_404(Comment, pk=review_id)
     product = Product.objects.get(name=review.product)
 
-    try:
-        review.delete()
+    review.delete()
 
-        comments = Comment.objects.filter(product=product)
-        avg_rating = Comment.aggregate(Avg('rating'))['rating__avg']
-        if avg_rating:
-            product.avg_rating = int(avg_rating)
-        else:
-            product.avg_rating = 0
-
-        product.save()
-        messages.success(request, 'Your review was deleted')
-
-    # If deletion failed, return an error message
-    except Exception as e:
-        messages.error(request, "We couldn't delete your review because "
-                                f" error:{e} occured. Try again later.")
+    messages.success(request, 'Your review was deleted')
 
     return redirect('/products/{}'.format(product.id))
+

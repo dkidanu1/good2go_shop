@@ -53,7 +53,7 @@
             <div class="col-12 col-lg-4 text-center px-0">
                 Rating: {{ comment.rating }} /5
                 <p class="mb-0 fw-bold text-uppercase">{{ created.on }}</p>
-                <p class="rating-stars txt-small" data-value="{{ comments.rating }}"></p>
+                <p class="rating-stars txt-small" data-value="{{ comment.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
                 {% if user.is_authenticated and user.get_username == comment.user.username %}
                 <div class="col m-auto text-center mb-2">
@@ -81,13 +81,21 @@
                                         <!-- Render edit form  -->
                                         {% csrf_token %}
                                         <input type="text" name="title" maxlength="50" autofocus=""
-                                            value="{{comments.title}}"
+                                            value="{{comment.title}}"
                                             class="add-blog-form-field textinput textInput form-control form-control"
                                             required="" id="id_title">
-                                        <textarea name="description" cols="40" rows="10" placeholder="Description"
+                                       <!-- <textarea name="description" cols="40" rows="10" placeholder="Description" value = "{{comment.body}}"
                                             class="add-blog-form-field textarea form-control form-control" required=""
-                                            id="id_description">{{comment.body}}</textarea>
-                                        <select name="rating"
+                                            id="id_description">{{comment.body}}</textarea>-->
+                                        <input type="text" name="body" maxlength="50" autofocus=""
+                                            value="{{comment.body}}"
+                                            class="add-blog-form-field textinput textInput form-control form-control"
+                                            required="" id="">
+                                        <input type="text" name="rating" maxlength="50" autofocus=""
+                                            value="{{comment.rating}}"
+                                            class="add-blog-form-field textinput textInput form-control form-control"
+                                            required="" id="">
+                                       <!--  <select name="rating"
                                             class="add-blog-form-field select form-control form-control" required=""
                                             id="id_rating">
                                             <option value="" selected="">---------</option>
@@ -96,7 +104,7 @@
                                             <option value="3">3</option>
                                             <option value="4">4</option>
                                             <option value="5">5</option>
-                                        </select>
+                                        </select>-->
                                     </div>
                                     <!-- Footer containing Add and Cancel buttons -->
                                     <div class="modal-footer">
