@@ -34,8 +34,8 @@ def product_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
-                                    
-                                    
+
+
 def add_comment(request, product_id):
     """
     Allows a user to add a review and redirect them back to the
@@ -44,7 +44,7 @@ def add_comment(request, product_id):
     user = request.user
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
-   
+
     review_details = {
         'title': request.POST['title'],
         'body': request.POST['body'],

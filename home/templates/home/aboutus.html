@@ -23,7 +23,8 @@
 
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Order Now</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Order
+                        Now</a>
                 </h4>
             </div>
         </div>
@@ -42,16 +43,17 @@
     </div>
     <!--Blog Posts-->
     <div class="container">
-            <div class="col-12 col-md-12 my-auto text-center">
-                <h1 class="logo-font text-black">
-                    GOOD2GO Blog
-                </h1>
-            </div>
+        <div class="col-12 col-md-12 my-auto text-center">
+            <h1 class="logo-font text-black">
+                GOOD2GO Blog
+            </h1>
+        </div>
         <div class="row h-100">
             <div class="col-12 col-md-12 col-sm-8 my-auto">
                 {% include 'blog/blog.html' %}
             </div>
         </div>
     </div>
+</div>
 
 {% endblock %}

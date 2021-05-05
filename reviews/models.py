@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 class Comment(models.Model):
-    # many to one relationship with the comment
+
     RATE = [
         (1, '1'),
         (2, '2'),
