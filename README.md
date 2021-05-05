@@ -159,3 +159,77 @@ The pages consist of different sections unique to their functionality. A navigat
 
 
 ## Skeleton Plane 
+
+
+## Testing
+### Validating Code
+### Navigation
+## Overall
+
+### Navigation
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on G2G Logo  | Opens "About Us" page | As Expected | Pass |
+| Clicking on `Product` link | Opens dropdown tab with links | As expected | Pass |
+| Clicking on `Meals and Fresh Produce` link | Opens dropdown tab with links | As expected | Pass |
+| Clicking on `My Account` link | Opens dropdown tab with links for Log In | As expected | Pass |
+| Clicking on `Register` link | Opens Register page | As expected | Pass |
+| Clicking on `my account` link | Opens dropdown tab with links | As expected | Pass |
+| Clicking on `log Out` link | Logs out user and redirects to log in page | As expected | Pass |
+
+### Footer
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on `Facebook` icon | Opens Facebook website in new tab | As expected | Pass |
+| Clicking on `Instagram` icon | Opens Instagram website in new tab | As expected | Pass |
+| Clicking on `Twitter` icon | Opens Twitter website in new tab | As expected | Pass |
+| Clicking on nav menu links | Opens the appropriate web page | As expected | Pass |
+
+## About us
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on `Read more` blog button | Opens the full blog post on new page | As expected | Pass |
+
+## Product
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on product cards | Opens the selected product detail | As expected | Pass |
+| Clicking on `Add to Bag` button | Opens the products page | As expected | Pass |
+| Clicking on `Email` icon | Opens email modal to contact site owner | As expected | Pass |
+| Clicking on filter button | Show products under that category | As Expected | Pass
+| Clicking on product | Show product details info on a new page | As Expected | Pass
+| Selecting the number in input and clicking "Add" | Adds the selected quantity of the item to cart and then opens "View Bag" page |As Expected | Pass
+
+### Reviews
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on `Submit` button without filling all the forms | Displays Validation to tell the user to enter all the forms | As Expected | Pass |
+| After clicking on `Add` button | User is redirected to "Products" page with their review now sucessfully showing | As Expected | Pass |
+| Clicking on `Edit` symbol | User is redirected to "Edit your review" modal with previous information showing | As Expected | Pass |
+| Clicking on `Delete` symbol | user is directed to modal to delete their review | As Expected | Pass |
+
+### Registration
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on Register button | Registers the user and redirects to confirm email address. If registration form is incomplete, shows Please fill out this field | As Expected | Pass
+
+### Sign in
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| Clicking on `Log In` with correct username and password | Directs user to the index page | As Expected | Fail |
+| Clicking on `Log In` with Incorrect username and password | flash message to user showing incorrect username or password | As Expected | Pass |
+| Clicking on Forgot password | Opens "Forgot password" page | As Expected | Pass
+
+### Log Out
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| clicking on `Shop` button | Shows "Shop" page | As Expected | Pass
+| Clicking on `log Out` button | Logs out user and redirects to index page | As expected | Pass |

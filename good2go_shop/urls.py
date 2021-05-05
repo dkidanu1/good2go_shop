@@ -31,5 +31,4 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('reviews/', include('reviews.urls')),
     path('blog/', include('blog.urls')),
-    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
