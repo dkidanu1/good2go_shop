@@ -20,7 +20,7 @@ body {
 }
 
 @media (min-width:500px) and (max-width:800px) {
-.card {
+.cardp {
     margin-left: 45px;
 }
     }
@@ -30,6 +30,8 @@ body {
     margin-left: 45px;
 }
   }
+
+
 
 /* from Bulma */
 .icon {
