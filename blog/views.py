@@ -15,7 +15,7 @@ class PostList(generic.ListView):
 
 class Post_Detail(generic.DetailView):
     model = Post
-    template_name = 'post_detail.html'
+    template_name = 'blog/post_detail.html'
 
 
 # Function to be imported into Blog view.py 

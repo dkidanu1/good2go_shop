@@ -34,8 +34,8 @@ def product_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
-                                     
-                                       
+                                    
+                                    
 def add_comment(request, product_id):
     """
     Allows a user to add a review and redirect them back to the
@@ -96,7 +96,7 @@ def edit_comment(request, review_id):
                                 'Make sure the form is valid.')
 
     #return redirect(reverse('product_detail', args=(review.product.id,)))
-    return redirect('/products/{}'.format(product.id)) 
+    return redirect('/products/{}'.format(product.id))
 
 
 def delete_comment(request, review_id):
@@ -126,4 +126,3 @@ def delete_comment(request, review_id):
 
     #return redirect(reverse('product_detail', args=(review.product.id,)))
     return redirect('/products/{}'.format(product.id))
-
