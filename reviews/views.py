@@ -41,7 +41,6 @@ def add_comment(request, product_id):
     Allows a user to add a review and redirect them back to the
     item view
     """
-    #user = UserProfile.objects.get(user=request.user)
     user = request.user
     product = get_object_or_404(Product, pk=product_id)
     review_form = CommentForm()
@@ -95,7 +94,6 @@ def edit_comment(request, review_id):
         messages.error(request, 'Something went wrong. '
                                 'Make sure the form is valid.')
 
-    #return redirect(reverse('product_detail', args=(review.product.id,)))
     return redirect('/products/{}'.format(product.id))
 
 
@@ -124,5 +122,4 @@ def delete_comment(request, review_id):
         messages.error(request, "We couldn't delete your review because "
                                 f" error:{e} occured. Try again later.")
 
-    #return redirect(reverse('product_detail', args=(review.product.id,)))
     return redirect('/products/{}'.format(product.id))
