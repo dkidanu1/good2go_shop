@@ -301,8 +301,15 @@ Issues Found:
 A number of issues were found with the styling and sizing of elements throughout the site. The most notable were the map sizing and the broken product images.
 
 1.	![Map Sizing](media/readme/map.png)
+The Map was rendering incorrectly on the page and when the screen size was reduced the map did not keep its height. To rectify this bootstrap columns were utilized as well as css styling. 
 2.  ![Broken Product Link](media/readme/goat.png)
+Image was updated in admin console 
 3. ![Broken Product Link](media/readme/sushi.png)
+Image was updated in admin console 
+4. ![Review](media/readme/review.png)
+A logic error was found when attempting to edit the reviews. To fix this the model logic was reviewed and edit html render page changed. 
+5. ![Contact Us](media/readme/contactus.png)
+A number of console errors were found in the page. These were identified and solved one by one.
 
 Linking:
 
