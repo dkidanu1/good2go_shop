@@ -370,7 +370,7 @@ During the development of the Django project it became evident that various link
 
 | Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
 | :-------------: |:----------------:| :--------------: | :---------: |
-| Clicking on `Log In` with correct username and password | Directs user to the index page | As Expected | Fail |
+| Clicking on `Log In` with correct username and password | Directs user to the index page | As Expected | Pass |
 | Clicking on `Log In` with Incorrect username and password | flash message to user showing incorrect username or password | As Expected | Pass |
 | Clicking on Forgot password | Opens "Forgot password" page | As Expected | Pass
 
@@ -460,3 +460,7 @@ Due to time constraints major element fixes were prioritized over smaller fixed.
 -	E501 line too long notices 
 
 ## Credit 
+
+The store was modeled after the Too Good to Go brand, which is a sustainability website. 
+
+**This is for educational use.**
