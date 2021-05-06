@@ -3,7 +3,7 @@
 ![Responsiveness](static/img/responsive.png)
 
 
-The live website can be found [The Cook Book](https://goodtogo1.herokuapp.com/).
+The live website can be found [Good2Go](https://goodtogo1.herokuapp.com/).
 
 
 # Contents
@@ -159,12 +159,19 @@ The pages consist of different sections unique to their functionality. A navigat
 
 
 ## Skeleton Plane 
+The Goodtogo website will have a consistent colour pallet consisting of greys and maroons., this will include consistent typography, sizing, colour and look/feel.
+
 
 
 ## Testing
 ### Validating Code
-### Navigation
-## Overall
+- HTML code is validated through W3 validator.
+- CSS code is validated through W3 Jigsaw.
+- JavaScript code is validated through JS Hint.
+- Python code is validated through PEP8.
+- Flake8
+A number of issues were identified and rectified utilizing Flake8, it was also chosen to not address a number of identified issues as they were not detrimental to the project as a whole. 
+
 
 ### Navigation
 
@@ -233,3 +240,12 @@ The pages consist of different sections unique to their functionality. A navigat
 | :-------------: |:----------------:| :--------------: | :---------: |
 | clicking on `Shop` button | Shows "Shop" page | As Expected | Pass
 | Clicking on `log Out` button | Logs out user and redirects to index page | As expected | Pass |
+
+### Checkout
+
+| Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
+| :-------------: |:----------------:| :--------------: | :---------: |
+| clicking on `bag` button | Shows "bag" page | As Expected | Pass
+| Clicking on `- or +` buttons | Adds or Decreases quantity of items | As expected | Pass |
+| Clicking on `Remove or Update` buttons | changes the shopping bag accordingly | As expected | Pass |
+

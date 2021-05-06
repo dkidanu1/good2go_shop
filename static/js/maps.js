@@ -1,4 +1,3 @@
-console.log("LOADING MAPS.JS")
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGsxMjMzNDU1MzQzNCIsImEiOiJja252ZXRyc24wNHk3Mm9wbTF6NTYwNDRsIn0.1H5llGIQ0fJGyXovrPh0PA';
 var map = new mapboxgl.Map({
     container: 'map', // container id
