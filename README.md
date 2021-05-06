@@ -7,22 +7,23 @@ The live website can be found [Good2Go](https://goodtogo1.herokuapp.com/).
 
 
 # Contents
-1. About the Site
-2. Strategy Plane
+1. [About the Site](##About-the-Site)
+2. [Strategy Plane](##Strategy-Plane)
     - User Stories 
-3. Scope Plane
+3. [Scope Plane](##Scope-Plane)
     - Features Planned
     - Features and Django Apps
     - Additional Functionality
-4. Structure Plane
+4. [Structure Plane](##Structure-Plane)
     - Database Design
-5. Skeleton Plane
-6. Surface Plane
-7. Design
-8. Technologies Used
-9. Testing
-10. Deployment
-11. Credit
+5. [Skeleton Plane](##Skeleton-Plane)
+6. [Surface Plane](##Surface-Plane)
+7. [Design](##Design)
+8. [Technologies Used](##Technologies-Used)
+9. [Testing](##Testing)
+10. [Deployment](##Deployment)
+11. [In Progress](##In-Progress)
+12. [Credit](##Credit)
 
 ## About the Site: 
 
@@ -161,16 +162,93 @@ The pages consist of different sections unique to their functionality. A navigat
 ## Skeleton Plane 
 The Goodtogo website will have a consistent colour pallet consisting of greys and maroons., this will include consistent typography, sizing, colour and look/feel.
 
+![Responsiveness](media/readme/sketch1.jpg)
+![Responsiveness](media/readme/sketch2.jpg)
 
+## Technologies Used
+
+### Programming languages
+-	HTML - the project used HTML to define structure and layout of the web page;
+-	CSS - the project used CSS stylesheets to specify style of the web document elements;
+-	JavaScript - the project used JavaScript to implement Stripe, EmailJS and custom Javascript.
+-	Python - the project back-end functions are written using Python.
+Libraries
+-	Font Awesome - Font Awesome icons were used throughout the web-site.
+-	jQuery - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation.
+Frameworks & Extensions
+-	Django – Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+-	Bootstrap – Bootstrap is a web framework that focuses on simplifying the development of informative web pages.
+-	EmailJS – Service that helps sending emails using client side technologies only. It only requires to connect EmailJS to one of the supported email services, create an email template, and use their Javascript library to trigger an email.
+-	Stripe – Allows individuals and businesses to make and receive payments over the Internet.
+Database
+-	Heroku Postgres – PostgreSQL is one of the world's most popular relational database management systems.
+Others
+-	GitHub - GitHub is a global company that provides hosting for software development version control using Git.
+-	Gitpod - One-click ready-to-code development environments for GitHub.
+-	Heroku - Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps.
+-	AWS-S3 – Object storage service that offers industry-leading scalability, data availability, security, and performance.
+
+## Surface Plane 
+
+As an e-commerce site owner I would like to …
+
+-	Have access to site super user and admin to view and maintain site 
+    - User is able to: log into admin and super user and apply CRUD functionality to Products. Blogs and Reviews.
+-	View products, transaction, reviews and identify any inconsistencies
+    - User is able to: view products, transactions and details through the admin portal to identify any issues or inconsistencies that arise. 
+-	Add products and new items to my store
+    - User is able to: Navigate to the product management section of the site and add new products as stock comes in. 
+-	Edit/ Delete products in my store
+    - User is able to: Navigate to the product management section of the site and Edit or Delete products as stock depletes or prices drop. 
+-	Accept and/or reject reviews from customers
+    - User is able to: Utilize the admin site to review and take action on reviews left by customer. This is a safely tool allowing the owner to product the site integrity.
+-	Add/ Delete Blog posts:
+    - User is able to: Utilize the admin site to add and delete blog posts as the content is created. This allows the owner to ensure all content on the blog content is up to date. 
+
+As a shopper I would like to …
+
+-	View products in distinct categories
+    - User is able to: navigate to the products section, meals section and fresh produce sections, viewing products that fit within that category. 
+-	View product details of the products selected 
+    - User is able to: Click on a specific product and be navigated to a product detail page where they are provided with all details about the product
+-	Easily add products/ items to my bag
+    - User is able to: Click on an item and find a “Add to Bag” button which will easily add the item to the bag. 
+-	View products in bag and the grand total easily
+    - User is able to: View bag summary from home page as they add items into the bag. Furthermore, when they click on the bag they are able to see a full breakdown of items in the bag. 
+-	Register for a site account 
+    - User is able to: Navigate to account icon and select register, where they are able to fill in a registration form. 
+-	Receive a confirmation email after registering 
+    - User is able to: Check sign up email and receive a confirmation code
+-	Easily log in and logout
+    - User is able to: Navigate to account icon and select login, where they are able to fill in details for logging in or easily log out.
+-	View my personalised user account
+    - User is able to: Navigate to account icon and select my profile.
+-	Sort through available products by category, price etc…
+    - User is able to: Click on the Product button on the nav bar, and is presented with options to sort items.
+-	Search for product by name 
+    - User is able to: Utilize a search bar that is present at the top of the page. 
+-	Simply add payment information safely and securely 
+    - User is able to: Add payment details and verify if details are correct when submitting 
+-	View an order confirmation after checkout
+    - User is able to: view full checkout order prior to confirmation
 
 ## Testing
 ### Validating Code
-- HTML code is validated through W3 validator.
-- CSS code is validated through W3 Jigsaw.
-- JavaScript code is validated through JS Hint.
-- Python code is validated through PEP8.
+- HTML code is validated through [W3 validator](https://validator.w3.org/).
+    - Error in list (li) and (a) elements (Fixed)
+- CSS code is validated through [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
+    - Error in Value for background color (Fixed)
+    - Bootstrap Errors identified and left 
+- JavaScript code is validated through [JS Hint](https://jshint.com/).
+    - Unidentified variables found, however expected so remain unchanged 
+    - Issues found to do with version of server version, not a concern at this point
+
 - Flake8
+
 A number of issues were identified and rectified utilizing Flake8, it was also chosen to not address a number of identified issues as they were not detrimental to the project as a whole. 
+
+### Testing interaction:
+
 
 
 ### Navigation
@@ -249,3 +327,73 @@ A number of issues were identified and rectified utilizing Flake8, it was also c
 | Clicking on `- or +` buttons | Adds or Decreases quantity of items | As expected | Pass |
 | Clicking on `Remove or Update` buttons | changes the shopping bag accordingly | As expected | Pass |
 
+## Deployment
+
+### AWS S3
+-	Created new Amazon account and connected to amazon AWS3. 
+-	Locate S3 on amazon service create a bucket. Note public access must be all switched off to allow access for users.
+-	Enable the Static Website Hosting option, so it can serve the purpose of hosting static files. You will need to input an index.html and error.html before saving. 
+-	Navigate to Bucket Permissions and click into CORS configuration, this part already has prefilled default config, Write the default code and save the config.
+-	Navigate to Bucket policy to allow access to the contents across all web. Here we will input code including arn address displayed at the top.
+-	Next navigate to Amazon IAM to allow identity and access management of our stored files and folder. In the IAM service add a new group for application and then set the policies to ALL.
+-	This generates a zip file containing ID and KEY for use in the newly added group. This ID and KEY has to be stored in an environment variable.
+-	The Django Storages is passed into the installed apps in settings and a custom storage file is created to store credentials in environment variable. 
+-	Run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder and your folder and files should display in your AWS S3 BUCKETS.
+
+### Heroku Deployment
+
+Create application:
+1.	Navigate to Heroku.com and login.
+2.	Click on the new button.
+3.	Select create new app.
+4.	Enter the app name.
+5.	Select region.
+
+Set up connection to Github Repository:
+1.	Click the deploy tab and select GitHub - Connect to GitHub.
+2.	A prompt to find a github repository to connect to will then be displayed.
+3.	Enter the repository name for the project and click search.
+4.	Once the repo has been found, click the connect button.
+
+Add PostgreSQL Database:
+1.	Click the resources tab.
+2.	Under Add-ons seach for Heroku Postgres and then click on it when it appears.
+3.	Select Plan Name Hobby Dev - Free and then click Submit Order Form.
+
+Set environment variables:
+1.	Click on the settings tab and then click reveal config vars.
+2.	Variables added:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - EMAIL_HOST_PASS
+    - EMAIL_HOST_USER
+    - SECRET_KEY
+    - STRIPE_PRICE_ID
+    - STRIPE_PUBLIC_KEY
+    - STRIPE_SECRET_KEY
+    - STRIPE_WH_SECRET
+    - USE_AWS
+
+Enable automatic deployment:
+1.	Click the Deploy tab
+2.	In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+Local Deployment
+
+1.	Navigate to the GitHub Repository.
+2.	Click the Code drop down menu.
+3.	Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+4.	Open your developement editor of choice and open a terminal window in a directory of your choice.
+5.	Use the git clone command in terminal followed by the copied git URL.
+6.	A clone of the project will be created locally on your machine.
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages: pip install -r requirements.txt
+
+### In Progress
+
+Due to time constraints major element fixes were prioritized over smaller fixed. As the code is being reviewed you will encounter the following:
+-	CSS: text-black – renders a maroon colour rather than black
+-	HTML Templates: 404.html and 500.html templates have been created but not yet implemented
+-	E501 line too long notices 
+
+## Credit 
