@@ -1,6 +1,6 @@
 # Good2Go
 
-![Responsiveness](static/img/responsive.png)
+![Responsiveness](media/readme/responsive.png)
 
 
 The live website can be found [Good2Go](https://goodtogo1.herokuapp.com/).
@@ -231,11 +231,15 @@ As a shopper I would like to …
     - User is able to: Add payment details and verify if details are correct when submitting 
 -	View an order confirmation after checkout
     - User is able to: view full checkout order prior to confirmation
+- Receive an email confirmation after checking out
+    - User is able to: recieve emails when checking out
+
 
 ## Testing
 ### Validating Code
 - HTML code is validated through [W3 validator](https://validator.w3.org/).
     - Error in list (li) and (a) elements (Fixed)
+    - Error on (a) attribute is intended to be fixed but project ran out of time to address these, as the code is functioning correctly the decision was made to complete larger functions. 
 - CSS code is validated through [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
     - Error in Value for background color (Fixed)
     - Bootstrap Errors identified and left 
@@ -249,6 +253,7 @@ A number of issues were identified and rectified utilizing Flake8, it was also c
 
 ### Testing interaction:
 
+<<<<<<< HEAD
 Not signed in:
 
 Home Page:
@@ -305,6 +310,7 @@ During the development of the Django project it became evident that various link
 1.	Add Review: here there was a broken link stemming from a naming issue in the models.py ![Add Review](media/readme/addreview.png)
 2.	Edit Review: here there was 1 required positional argument missing in the code. ![Edit Review](media/readme/editreview.png)
 3.	Blog View: The link to allow the user to read more and view entire blog posts was broken. ![Blog](media/readme/blog.png) 
+4. Text area input for the reviews was not able to access the value attribute. This was changed to an input. 
 
 
 ### Navigation
@@ -382,6 +388,7 @@ During the development of the Django project it became evident that various link
 | clicking on `bag` button | Shows "bag" page | As Expected | Pass
 | Clicking on `- or +` buttons | Adds or Decreases quantity of items | As expected | Pass |
 | Clicking on `Remove or Update` buttons | changes the shopping bag accordingly | As expected | Pass |
+| Add Enough items to reach free delivery threshold | delivery fee changes to 0 accordingly | As expected | Pass |
 
 ## Deployment
 
