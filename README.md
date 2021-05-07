@@ -320,6 +320,7 @@ The contact form had an error that identified an extra line of code that was not
 When deploying the project to Heroku, it became clear that there were a number of issues in the deployment, i.e. the about us page was not linkedup correctly, the images were hard coded instead of URLs utilized and console errors affected the deployment. 
 4. Review ![Review](media/readme/review.png)
 There was a logical error in the review section, when an edit was made and saved an error was thrown. The code was calling an undefined element. 
+5. Stripe Checkout: "unsupported operand type(s) for +: 'decimal.Decimal' and 'float'" there was an error of mismatch between decimal and float to fix this I transformed the decimals into floats to be consistent.
 
 Linking:
 
