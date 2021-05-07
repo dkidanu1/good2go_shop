@@ -478,6 +478,6 @@ Due to time constraints major element fixes were prioritized over smaller fixed.
 
 ## Credit 
 
-The store was modeled after the Too Good to Go brand, which is a sustainability website. 
+The store was modeled after the Too Good to Go brand, which is a sustainability website. The code was modled after the Boutique Ado site and the Stiley sites. Tutorials were utilized for adding elements such as blog, map and review.
 
 **This is for educational use.**
