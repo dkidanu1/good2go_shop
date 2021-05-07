@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static '../static/css/base.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -36,7 +36,7 @@
                 <label for="message">Subject *</label>
                 <textarea rows="5" name="message" class="form-control margin-5" style="height:200px" id="message"
                     placeholder="Write your question or comment then click submit.." required></textarea>
-                <button form="contactForm" type="submit" id="submit" style="margin-top: 10px;">Submit</button>
+                <button class="btn-lg btn-black btn text-uppercase" form="contactForm" type="submit" id="submit" style="margin-top: 10px; margin-bottom: 15px;">Submit</button>
             </form>
         </div>
 
@@ -66,14 +66,15 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript" src="{% static '/js/maps.js' %}"></script>
-<script type="text/javascript" src="{% static '/js/email.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/maps.js' %}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 </script>
 <script type="text/javascript">
     (function () {
         emailjs.init("user_xrIf5Dia8Ng6JpCHdTsuT");
-        emailjs.sendForm('contact_service', 'contact_form', this)
+        //emailjs.sendForm('contact_service', 'contact_form', this)
     })();
 </script>
+<script type="text/javascript" src="{% static 'js/email.js' %}"></script>
+
 {% endblock %}
