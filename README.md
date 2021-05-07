@@ -253,7 +253,6 @@ A number of issues were identified and rectified utilizing Flake8, it was also c
 
 ### Testing interaction:
 
-<<<<<<< HEAD
 Not signed in:
 
 Home Page:
@@ -300,16 +299,27 @@ Issues Found:
 
 A number of issues were found with the styling and sizing of elements throughout the site. The most notable were the map sizing and the broken product images.
 
-1.	![Map Sizing](media/readme/map.png)
+1.	Map Sizing ![Map Sizing](media/readme/map.png)
 The Map was rendering incorrectly on the page and when the screen size was reduced the map did not keep its height. To rectify this bootstrap columns were utilized as well as css styling. 
-2.  ![Broken Product Link](media/readme/goat.png)
+2.  Broken Prouduct link ![Broken Product Link](media/readme/goat.png)
 Image was updated in admin console 
-3. ![Broken Product Link](media/readme/sushi.png)
+3. Broken Prouct link ![Broken Product Link](media/readme/sushi.png)
 Image was updated in admin console 
-4. ![Review](media/readme/review.png)
+4. Review ![Review](media/readme/review.png)
 A logic error was found when attempting to edit the reviews. To fix this the model logic was reviewed and edit html render page changed. 
-5. ![Contact Us](media/readme/contactus.png)
+5. Contact us: ![Contact Us](media/readme/contactus.png)
 A number of console errors were found in the page. These were identified and solved one by one.
+
+Console Issues
+
+1. Favicon ![Favicon](media/readme/favicon.png)
+The console threw errors identifying that the Favicon could not be reached. The issue here was that the image was hard coded and not input as a URL. 
+2. Contact Us ![Contact us](media/readme/contactus.png)
+The contact form had an error that identified an extra line of code that was not necessary for the script to work. This function was calling itself and thew an error.
+3. Logs ![Logs](media/readme/logs.png)
+When deploying the project to Heroku, it became clear that there were a number of issues in the deployment, i.e. the about us page was not linkedup correctly, the images were hard coded instead of URLs utilized and console errors affected the deployment. 
+4. Review ![Review](media/readme/review.png)
+There was a logical error in the review section, when an edit was made and saved an error was thrown. The code was calling an undefined element. 
 
 Linking:
 
