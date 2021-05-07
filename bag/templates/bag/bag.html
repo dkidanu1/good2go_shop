@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col btn btn-black rounded text-uppercase mt-5">
                     {% include "bag/checkout-buttons.html" %}
                     <p class="text-muted mb-5">A summary of your bag contents is below</p>
                 </div>
@@ -111,11 +111,11 @@
         </div>
         {% else %}
         <p class="lead mb-5">Your bag is empty.</p>
-        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+        <a href="{% url 'products' %}" class="btn rounded-0 btn-lg">
             <span class="icon">
                 <i class="fas fa-chevron-left"></i>
             </span>
-            <span class="text-uppercase text-black">Keep Shopping</span>
+            <span class="text-uppercase btn btn-black rounded text-uppercase">Keep Shopping</span>
         </a>
         {% endif %}
     </div>
